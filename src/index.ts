@@ -58,7 +58,7 @@
 //     age: number;
 //     email: string;
 // };
-// type UserWithoutEmail = Exclude<keyof User, 'email'>;
+// type UserWithoutEmail = Exclude< User, 'email'>;
 // const user: UserWithoutEmail = 'name' || 'age';
 
 // Extract is used to extract specific properties from the type
@@ -67,8 +67,8 @@
 //     age: number;
 //     email: string;
 // };
-// type UserWithEmail = Extract<keyof User, 'email'>;
+// type UserWithEmail = Extract< User, 'email'>;
 // const user: UserWithEmail = 'email';
 
-// diiference between Pick and Extract is that Pick selects specific properties from the type whereas Extract selects properties that are assignable to the given type
+// diference between Pick and Extract is that Pick selects specific properties from the type whereas Extract selects properties that are assignable to the given type
 
